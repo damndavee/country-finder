@@ -1,7 +1,50 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 40vh;
+  /* Photo by Марьян Блан | @marjanblan on Unsplash */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(117, 19, 93, 0.73))), url("img/worldMap.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(117, 19, 93, 0.73)), url("img/worldMap.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+}
+
+.header__heading {
+  font-size: 45px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  padding: 10px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.header__heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+
+.header__span {
+  color: #75135d;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0 0 5px #fff;
 }
 /*# sourceMappingURL=main.css.map */

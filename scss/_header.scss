@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    height: 40vh;
+    /* Photo by Марьян Блан | @marjanblan on Unsplash */
+    background-image:
+    linear-gradient(to bottom, rgba(0,0,0,.3), rgba($primary-color, 0.73)),
+    url('img/worldMap.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+
+    &__heading {
+        font-size: $large-font;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        padding: $p-small;
+        text-shadow: $heading-shadow;
+        color: $secondary-color;
+    }
+
+    &__heading::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: .5;
+    }
+
+    &__span {
+        color: $primary-color;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0 0 5px #fff;
+    }
+}

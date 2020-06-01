@@ -1,0 +1,26 @@
+.letters {
+    width: 100%;
+    height: 10vh;
+    background-color: $tertiary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: $shadow;
+    border-top: 1px solid rgba(0,0,0,.4);
+}
+
+.letter {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: $primary-color;
+    box-shadow: $shadow;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+}

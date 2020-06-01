@@ -1,0 +1,23 @@
+.navigation {
+    width: 400px;
+    height: 100%;
+    background-color: #ededed;
+    color: rgb(117, 19, 93);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-100%);
+    transition: transform .3s linear;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #000;
+}
+
+.navigation--active {
+    transform: translateX(0);
+}

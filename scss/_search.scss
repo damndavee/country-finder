@@ -1,0 +1,16 @@
+.search {
+    padding: 7px 10px;
+    width: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #75135d;
+    border-radius: 3px;
+    /* background-color: rgba(117, 19, 93, .2); */
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+        box-shadow: $shadow;
+    }
+}

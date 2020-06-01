@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
     <nav class="navigation" id="navigation">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quasi.</p>
         <p>Lorem, ipsum.</p>
     </nav>
 
-    <button class="hamburger">
+    <button class="hamburger" id="hamburger">
         <span class="hamburger__box">
-            <span class="hamburger__iinner"></span>
+            <span class="hamburger__inner"></span>
         </span>
     </button>
 
@@ -27,12 +26,13 @@
 
     <main class="main" id="main">
         <div class="menu">
-            <div class="wrapper">
-                <button class="btn menu menu--all-countries" id="show-countries">Show all countries</button>
-                <input type="text" class="search search__country" id="search-country" placeholder="enter country name...">
-                <button class="btn menu menu--searched-country">Show country</button>
-            </div>
+            <button class="btn menu--all-countries" id="show-countries">Show all countries</button>
+            <input type="text" class="search search__country" id="search-country" placeholder="enter country name...">
+            <button class="btn menu--searched-country">Show country</button>
         </div>
+
+        <div class="letters" id="letters"></div>
+
        
         <div class="container" id="container"></div>
     </main>

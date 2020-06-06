@@ -235,9 +235,11 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   border: 1px solid #75135d;
+  color: #75135d;
   border-radius: 3px;
-  /* background-color: rgba(117, 19, 93, .2); */
   background-color: transparent;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .search:focus {
@@ -368,6 +370,47 @@ body {
 
 .country__btn:hover {
   background-color: #ededed;
+  color: #75135d;
+}
+
+.details {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.details__container {
+  position: relative;
+  width: 60%;
+  height: 80vh;
+  background-color: #dedede;
+}
+
+.details__btn-close {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+
+.details__btn--close:hover {
   color: #75135d;
 }
 

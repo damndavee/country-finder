@@ -1,0 +1,34 @@
+.details {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.details__container {
+    position: relative;
+    width: 60%;
+    height: 80vh;
+    background-color: $tertiary-color;
+}
+
+.details__btn-close {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+
+.details__btn--close:hover {
+    color: #75135d;
+}

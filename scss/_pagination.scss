@@ -7,3 +7,17 @@
     width: 100%;
     margin: $m-big 0;
 }
+
+.pagination__prev-btn {
+    order: 1;
+}
+
+.pagination__next-btn {
+    order: 3;
+}
+
+.pagination__current-page {
+    order: 2;
+    margin: 0 10px;
+    border: 1px solid $primary-color;
+}

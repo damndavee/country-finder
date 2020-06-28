@@ -427,4 +427,24 @@ body {
   width: 100%;
   margin: 20px 0;
 }
+
+.pagination__prev-btn {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.pagination__next-btn {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.pagination__current-page {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 0 10px;
+  border: 1px solid #75135d;
+}
 /*# sourceMappingURL=main.css.map */

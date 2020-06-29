@@ -6,4 +6,12 @@
     padding: 20px 0;
     place-items: center;
     overflow: hidden;
+
+    @include respond(s-desktop) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(small) {
+        grid-template-columns: 1fr;
+    }
 }

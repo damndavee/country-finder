@@ -28,4 +28,12 @@
     &:focus {
         outline: none;
     }
+
+    &:nth-child(1) {
+        order: -1;
+    }
+
+    &:nth-child(3) {
+        order: 3;
+    }
 }

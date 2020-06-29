@@ -5,12 +5,28 @@
     align-items: center;
     justify-content: center;
     
-    /* background-color: #ededed; */
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     background-image: url('img/worldMap.jpg');
     background-size: cover;
     background-position: center;
     border: 1px solid #75135d;
+    border-radius: 5px;
+
+    @include respond(n-desktop) {
+        width: 300px;
+    }
+
+    @include respond(s-desktop) {
+        width: 370px;
+    }
+
+   @include respond(medium) {
+        width: 300px;
+   }
+
+   @include respond(small) {
+        width: 400px;
+    }
 }
 
 .country__image {
@@ -19,6 +35,8 @@
 }
 
 .country__flag {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     width: 100%;
     height: 100%;
     object-fit: cover;

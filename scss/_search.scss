@@ -9,9 +9,23 @@
     border-radius: 3px;
     background-color: transparent;
     transition: all .2s ease;
+    order: 2;
 
     &:focus  {
         outline: none;
         box-shadow: $shadow;
+    }
+
+    @include respond(medium) {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include respond(x-small) {
+        width: 100%;
+        margin: 0 5px;
+    
     }
 }

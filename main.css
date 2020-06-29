@@ -203,6 +203,43 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 800px) {
+  .menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu__btn {
+    position: absolute;
+    bottom: 10%;
+    width: 35%;
+  }
+  .menu__btn:nth-child(2) {
+    left: 0;
+    margin-left: 11%;
+  }
+  .menu__btn:nth-child(3) {
+    right: 0;
+    margin-right: 11%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .menu__btn {
+    width: 45%;
+    position: absolute;
+  }
+  .menu__btn:nth-child(2) {
+    left: 0;
+    margin-left: 2%;
+  }
+  .menu__btn:nth-child(3) {
+    right: 0;
+    margin-right: 2%;
+  }
+}
+
 .btn {
   border: none;
   padding: 5px 10px;
@@ -237,6 +274,18 @@ body {
   outline: none;
 }
 
+.btn:nth-child(1) {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.btn:nth-child(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
 .search {
   padding: 7px 10px;
   width: 50%;
@@ -249,12 +298,32 @@ body {
   background-color: transparent;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .search:focus {
   outline: none;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 800px) {
+  .search {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .search {
+    width: 100%;
+    margin: 0 5px;
+  }
 }
 
 .letters {
@@ -318,6 +387,20 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 960px) {
+  .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .country {
   width: 350px;
   height: 100px;
@@ -330,13 +413,37 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* background-color: #ededed; */
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background-image: url("img/worldMap.jpg");
   background-size: cover;
   background-position: center;
   border: 1px solid #75135d;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .country {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .country {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .country {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .country {
+    width: 400px;
+  }
 }
 
 .country__image {
@@ -345,6 +452,8 @@ body {
 }
 
 .country__flag {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

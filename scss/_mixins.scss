@@ -10,7 +10,7 @@ breakpoints:
 
 @mixin respond($breakpoint) {
     @if $breakpoint == x-small {
-        @media only screen and (max-width: 460px) {@content};
+        @media only screen and (max-width: 470px) {@content};
     }
 
     @if $breakpoint == small {
@@ -19,6 +19,10 @@ breakpoints:
 
     @if $breakpoint == medium {
         @media only screen and (max-width: 800px) {@content};
+    }
+    
+    @if $breakpoint == s-desktop {
+        @media only screen and (max-width: 960px) {@content};
     }
 
     @if $breakpoint == n-desktop {

@@ -7,4 +7,41 @@
     justify-content: center;
     background-color: $tertiary-color;
     position: relative;
+
+    @include respond(medium) {
+        display: block;
+    }
+
+    &__btn {
+        @include respond(medium) {
+            position: absolute;
+            bottom: 10%;
+            width: 35%;
+    
+            &:nth-child(2) {
+                left: 0;
+                margin-left: 11%;
+            }
+    
+            &:nth-child(3) {
+                right: 0;
+                margin-right: 11%;
+            }
+        }
+    
+        @include respond(x-small) {
+            width: 45%;
+            position: absolute;
+    
+            &:nth-child(2) {
+                left: 0;
+                margin-left: 2%;
+            }
+    
+            &:nth-child(3) {
+                right: 0;
+                margin-right: 2%;
+            }
+        }
+    }
 }

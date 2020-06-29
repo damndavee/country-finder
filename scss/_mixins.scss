@@ -1,0 +1,35 @@
+/* 
+breakpoints: 
+460px - x-small;
+640px - small;
+800px - medium;
+1024px / 1000px - n-desktop;
+1200px - l-desktop;
+1440px - xl-desktop;
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == x-small {
+        @media only screen and (max-width: 460px) {@content};
+    }
+
+    @if $breakpoint == small {
+        @media only screen and (max-width: 640px) {@content};
+    }
+
+    @if $breakpoint == medium {
+        @media only screen and (max-width: 800px) {@content};
+    }
+
+    @if $breakpoint == n-desktop {
+        @media only screen and (max-width: 1100px) {@content};
+    }
+
+    @if $breakpoint == l-desktop {
+        @media only screen and (max-width: 1200px) {@content};
+    }
+
+    @if $breakpoint == xl-desktop {
+        @media only screen and (max-width: 1440px) {@content};
+    }
+}

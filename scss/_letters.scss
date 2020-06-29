@@ -7,6 +7,15 @@
     justify-content: space-evenly;
     box-shadow: $shadow;
     border-top: 1px solid rgba(0,0,0,.4);
+
+    @include respond(n-desktop) {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, 40px);
+        place-items: center;
+        justify-items: center;
+      
+    }
 }
 
 .letter {

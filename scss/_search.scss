@@ -24,8 +24,6 @@
     }
 
     @include respond(x-small) {
-        width: 100%;
-        margin: 0 5px;
-    
+        width: 90%;
     }
 }

@@ -206,7 +206,7 @@ body {
 @media only screen and (max-width: 800px) {
   .menu {
     display: block;
-    min-height: 7rem;
+    min-height: 6rem;
   }
 }
 
@@ -322,14 +322,13 @@ body {
 
 @media only screen and (max-width: 470px) {
   .search {
-    width: 100%;
-    margin: 0 5px;
+    width: 90%;
   }
 }
 
 .letters {
   width: 100%;
-  min-height: 7rem;
+  height: 7rem;
   background-color: #dedede;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +357,21 @@ body {
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .letters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4rem;
+  }
+}
+
 .letter {
   cursor: pointer;
   padding: 5px 10px;
@@ -374,6 +388,21 @@ body {
 .letter:hover {
   background-color: #75135d;
   color: #fff;
+}
+
+.select {
+  width: 70%;
+  padding: 5px;
+  border: 1px solid #75135d;
+  border-radius: 4px;
+  color: #75135d;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
@@ -444,6 +473,12 @@ body {
 @media only screen and (max-width: 640px) {
   .country {
     width: 400px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .country {
+    width: 90%;
   }
 }
 

@@ -27,6 +27,10 @@
    @include respond(small) {
         width: 400px;
     }
+
+    @include respond(x-small) {
+        width: 90%;
+    }
 }
 
 .country__image {

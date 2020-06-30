@@ -1,6 +1,6 @@
 .letters {
     width: 100%;
-    min-height: 7rem;
+    height: 7rem;
     background-color: $tertiary-color;
     display: flex;
     align-items: center;
@@ -14,7 +14,13 @@
         grid-template-columns: repeat(auto-fill, 40px);
         place-items: center;
         justify-items: center;
-      
+    }
+
+    @include respond(m-small) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
     }
 }
 
